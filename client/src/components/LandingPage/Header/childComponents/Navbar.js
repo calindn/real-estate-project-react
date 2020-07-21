@@ -34,28 +34,19 @@ export default function Navbar() {
             popup.style.opacity = '0';
         })
 
-        const inters_target = document.querySelector('.intersection-target');
-        const options = {
-            root: null, // it is the viewport
-            threshold: 0,
-            rootMargin: '-199px'
-        };
-
-        const observer = new IntersectionObserver(function (entries, observer) {
-            entries.forEach(entry => {
-                console.log(entry);
+        window.onscroll = (e) => {
+            console.log('scrolling');
+            console.log(window.scrollY);
+            if (window.scrollY > 199) {
                 const navbar_c = document.querySelector('.navbar-container');
-                // entry.target.classList.toggle('inverse');
-                if (entry.isIntersecting === false) {
-                    navbar_c.style.height = '0';
-                    navbar_c.classList.add('dynamic-class')
-                }
-                else {
-                    navbar_c.classList.remove('dynamic-class')
-                }
-            }, options);
-        })
-        observer.observe(inters_target);
+                navbar_c.style.height = '0';
+                navbar_c.classList.add('dynamic-class')
+            }
+            else if (window.scrollY < 199) {
+                const navbar_c = document.querySelector('.navbar-container');
+                navbar_c.classList.remove('dynamic-class')
+            }
+        }
 
     }, [])
     return (
@@ -77,7 +68,6 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-            <div className='intersection-target'></div>
             <div className='dark-overlay'></div>
         </>
 

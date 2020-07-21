@@ -14,10 +14,6 @@ import './Header.css';
 export default function Header() {
 
     let index = Math.floor(Math.random() * 4);
-    useEffect(() => {
-        console.log(document.querySelector('#header-c-id'))
-    }, [])
-
 
 
     return (
@@ -26,7 +22,7 @@ export default function Header() {
             <Heading />
             <Search />
             <SlideDownBtn />
-            <div style={{ height: '200vh' }}></div>
+            <div style={{ height: '200vh', width: '40vw' }}></div>
         </div>
     )
 }

@@ -10,7 +10,7 @@ import VideoAd from './childComponents/VideoAd';
 export default function Body() {
     return (
         <div>
-            <h1>Anunturi promovate</h1>
+            {/* <h1>Anunturi promovate</h1> */}
             <Homes />
             <SelectButtons />
             <OtherAnnouncements />
