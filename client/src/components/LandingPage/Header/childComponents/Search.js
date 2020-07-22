@@ -5,8 +5,6 @@ import React, { useState, useEffect } from "react";
 
 export default function Search() {
 
-
-
     const onFocus = (e) => {
         e.target.select();
     }
@@ -19,13 +17,15 @@ export default function Search() {
 
     const handleTabClick = (e) => {
         let tabs = document.querySelectorAll('.tab');
+        document.querySelector('.ansambluri  i').style.display = 'none'
         tabs.forEach(tab => {
             tab.classList.remove('selected-tab');
         });
         e.target.classList.add('selected-tab');
-
+        if (e.target.classList.value.includes('ansambluri')) {
+            document.querySelector('.ansambluri  i').style.display = 'block'
+        }
     }
-
 
     return (
         <>
@@ -38,7 +38,7 @@ export default function Search() {
                     <div onClick={handleTabClick} className='terenuri tab'>Terenuri</div>
                     <div onClick={handleTabClick} className='birouri_spatii_comerciale tab'>Birouri - Spații comerciale</div>
                     <div onClick={handleTabClick} className='cazare tab'>Cazare</div>
-                    <div onClick={handleTabClick} className='ansambluri tab'>Ansambluri</div>
+                    <div onClick={handleTabClick} className='ansambluri tab'><i className="fas fa-caret-down"></i>Ansambluri</div>
                 </div>
                 <div className='search'>
                     <div>
@@ -64,6 +64,17 @@ export default function Search() {
                 </div>
             </div>
             <div className='back-overlay'></div>
+            <div className='cities'>
+                <div className='city'>Toate</div>
+                <div className='city'>Bucuresti</div>
+                <div className='city'>Timisoara</div>
+                <div className='city'>Cluj-Napoca</div>
+                <div className='city'>Iasi</div>
+                <div className='city'>Brasov</div>
+                <div className='city'>Craiova</div>
+                <div className='city'>Constanta</div>
+                <div className='city'>Ploiesti</div>
+            </div>
         </>
 
     )

@@ -6,11 +6,14 @@ import CategoryList from './childComponents/CategoryList';
 import AddAnnouncements from './childComponents/AddAnnouncements';
 import Partners from './childComponents/Partners';
 import VideoAd from './childComponents/VideoAd';
+import rocket_svg from '../../../imgs/rocket_promo_dark_green.svg';
+
+import './Body.css';
 
 export default function Body() {
     return (
-        <div>
-            {/* <h1>Anunturi promovate</h1> */}
+        <div className='body-container'>
+            <h1 style={{ position: 'absolute' }}><img src={rocket_svg} alt='rocket svg' />Anunturi promovate</h1>
             <Homes />
             <SelectButtons />
             <OtherAnnouncements />

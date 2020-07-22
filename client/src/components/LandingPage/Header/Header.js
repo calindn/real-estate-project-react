@@ -4,12 +4,6 @@ import Heading from './childComponents/Heading'
 import Search from './childComponents/Search'
 import SlideDownBtn from './childComponents/SlideDownBtn'
 import './Header.css';
-// import bg_1 from '../../../imgs/bg_1.jpg';
-// import bg_2 from '../../../imgs/bg_2.jpg';
-// import bg_3 from '../../../imgs/bg_3.jpg';
-// import bg_4 from '../../../imgs/bg_4.jpg';
-
-
 
 export default function Header() {
 

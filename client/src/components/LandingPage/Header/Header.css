@@ -387,8 +387,8 @@
 .ansambluri {
    position: relative;
 }
-.ansambluri::before {
-    content: '\f0d7';
+.ansambluri i {
+    position: absolute;
     font-family: FontAwesome;
     color: #4FB053;
     display: inline-block;
@@ -408,6 +408,7 @@
     animation-fill-mode: none;
     animation-play-state: running;
 }
+/* default tab selected animation (down arrow up and down on repeat) */
 @keyframes verticalUpAndDown {
     0% {
         transform: translateY(0);
@@ -416,5 +417,74 @@
         transform: translateY(4px);
     }
 }
+.display_none {
+    display: none;
+}
+.display_block {
+    display: block;
+}
 
-/* default tab selected animation (down arrow up and down on repeat) */
+.cities {
+    display: flex;
+    justify-content: space-around;
+    
+    position: absolute;
+    top: 405px;
+    z-index: 5555;
+    left: 0;
+    right: 14px;
+    margin: auto;
+    width: 54.87vw;
+    height: 41px;
+}
+.cities .city {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    height: 30px;
+    font-size: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: #E6DCD4;
+    border-radius: 2px;
+    user-select: none;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+.cities .city:hover {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+
+
+/* SlideDownBtn styles */
+.html {
+    scroll-behavior: smooth;
+}
+.slide-down-btn{
+    width: 68px;
+    height: 68px;
+    border-radius: 100%;
+    background-color: #767370;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: .3s ease-out;
+    position: absolute;
+    right: 1.5vw;
+    top: 450px;
+}
+.slide-down-btn:hover {opacity: 1;}
+
+.slide-down-btn i {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 30px;
+    left: 40%;
+}
+
