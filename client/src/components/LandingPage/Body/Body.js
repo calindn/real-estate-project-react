@@ -13,7 +13,7 @@ import './Body.css';
 export default function Body() {
     return (
         <div className='body-container'>
-            <h1 style={{ position: 'absolute' }}><img src={rocket_svg} alt='rocket svg' />Anunturi promovate</h1>
+            <h1><img src={rocket_svg} alt='rocket svg' />Anunturi promovate</h1>
             <Homes />
             <SelectButtons />
             <OtherAnnouncements />

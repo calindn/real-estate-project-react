@@ -1,19 +1,339 @@
 .body-container {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 600px;
-    top: 550px;
+    height: auto;
+    top: 500px;
+    /* border: 1px solid red; */
+    background-color: #F3F3F3;
 }
-.body-container h1 {
+.body-container > h1 {
     font-weight: 550;
     font-size: 18px;
     /* border: 1px solid red; */
     display: flex;
     margin-left: 10.4vw;
-    margin-top: 40px;   
+    margin-top: 40px;
+    position: relative;
+    top: 40px;
+    z-index: 99999;
 }
 .body-container h1 img {
     width: 23px;
     height: 23px;
     margin-right: 17px;
+}
+
+/* HOME component styles */
+.home-c {
+    margin-left: 100px;
+    width: 270px;
+    height: 406px;
+    position: relative;
+    margin-top: 40px;
+}
+.home-c .upper {
+    position: relative;
+    height: 50%;
+    background: url('../../../imgs/homes/i1.jpg');
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* share and save icons +++++ */
+.home-c .upper .share,
+.home-c .upper .save {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: rgba(158,179,197,0.8);
+    cursor: pointer;
+}
+.home-c .upper:hover .share,
+.home-c .upper:hover .save {
+    display: block;
+}
+.home-c .upper .share {
+    right: 13px;
+}
+.home-c .upper .share .share-svg {
+    position: relative;
+}
+.home-c .upper .share:hover .share-svg:after {
+    content: 'Distribuie anunțul';
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 95px;
+    height: 12px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 11px;
+    color: #fff;
+    background-color: #6D6D6D;
+}
+
+.home-c .upper .share .share-svg svg {
+    width:19px;
+    height: 19px;
+    margin-left: 6.4px;
+    margin-top: 7px;
+    
+}
+.home-c .upper .share .share-svg:hover svg path {
+    fill: rgba(255, 255, 255, 0.8);
+
+}
+.home-c .upper .save .save-svg {
+    position: relative;
+}
+.home-c .upper .save:hover .save-svg:after {
+    content: 'Salvează anunțul';
+    position: absolute;
+    top: 40.8px;
+    left: -30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 95px;
+    height: 12px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 11px;
+    color: #fff;
+    background-color: #6D6D6D;
+} 
+.home-c .upper .save .save-svg svg {
+    width:20px;
+    height: 20px;  
+    position: absolute;
+    left: 8px;
+    top: 6px;
+}
+
+.home-c .upper .save .save-svg svg:nth-child(2) {
+    position: absolute;
+    display: none;
+}
+.home-c .upper .save .save-svg:hover svg:nth-child(2) {
+    display: block !important;
+}
+.home-c .upper .share {
+    right: 50px;
+}
+/* ----- */
+
+/* verified phone icon styles */
+.verified_phone {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: #fff;
+    bottom: 29px;
+    left: 6px;
+}
+.verified_phone svg {
+    /* display: none; */
+    width: 23px;
+    height: 22px;
+    margin-top: 6px;
+    margin-left: 6.4px;
+}
+
+/* sale/tenancy icon styles */
+.sale {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #4caf50;
+    font-size: 12px;
+    width: 74px;
+    padding: 3px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* lower part styles */
+.home-c .lower {
+    position: relative;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.home-c .lower h1 {
+    height: 30px;
+    width: 250px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 14px;
+    margin-left: 14px;
+    margin-bottom: 17px;
+}
+
+/* description styles */
+.home-c .lower .description {
+    margin-left: 14px;
+    font-size: 13px;
+    color: #b6b6b6;
+    height: 30px;
+}
+.home-c .lower .description span:not(.category-icon) {
+    margin-right: 10px;
+    display: inline-block;
+    height: 12px;
+    width: auto;
+    position: relative;
+    bottom: 5px;
+    margin-left: 5px;
+}
+.home-c .lower .description span:not(.category-icon):after {
+    position: absolute;
+    content: ' ';
+    border-right: 1.1px solid #b6b6b6;
+    height: 9.8px;
+    margin-left: 5px;
+    top: 2.5px;
+}
+.home-c .lower .description .m_squared:after {
+    position: absolute;
+    content: ' ';
+    top: 5.5px !important;
+}
+.home-c .lower .description .three-dots:after {
+    content: ' ';
+    position: absolute;
+    border: none !important;
+}
+.home-c .lower .description .category-icon {
+    background: url('../../../imgs/category_1_green.svg');
+    background-size: 18px 23px;
+    width: 18px;
+    height: 23px;
+    display: inline-block;
+}
+/* price, location styles  */
+.home-c .lower .price {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 14px;
+}
+.home-c .lower .location {
+    line-height: 19px;
+    font-size: 12px;
+    color: #b6b6b6;
+    margin-top: 14px;
+    padding-left: 14px;
+    padding-top: 19px;
+    border-top: 1px solid #efefef;
+
+    height: 20px;
+    width: 100%;
+}
+.home-c .lower .location span {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    line-height: 18px;
+}
+.home-c .lower .location i {
+    margin-right: 5px;
+    position: relative;
+    bottom: 19px;
+}
+
+
+
+.category-list-c {
+    position: absolute;
+    border: 1px solid red;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: #727272;
+}
+
+/* columns row -------------------------- */
+.category-list-c .columns {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+}
+.category-list-c .columns  h1 {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 8px;
+}
+.category-list-c .columns ul li {
+    font-size: 12px;
+    list-style: none;
+    line-height: 25px;
+}
+.category-list-c .columns ul li:hover {
+    color: #000;
+    cursor: pointer;
+}
+.category-list-c .columns .categories div {
+    width: 440px;
+    display: flex;
+}
+.category-list-c .columns .categories div ul:nth-child(1) {
+    margin-right: 40px;
+}
+.category-list-c .main-districts {
+    margin-left: 20px;
+} 
+.category-list-c .columns .main-districts div {
+    display: flex;
+    width: 340px;
+}
+.category-list-c .columns .main-districts div ul:nth-child(1) {
+    margin-right: 180px;
+}
+.category-list-c .ads-of-iterest {
+    width: 140px;
+    margin-left: 170px;
+}
+
+/* text row ------------------------------- */
+.category-list-c .text {
+    width: 80%;
+    margin: auto;
+    font-size: 12px;
+    line-height: 20px;
+}
+.category-list-c .text a {
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2px;
+    color: #000;
+}
+
+/* cta row -------------------------------- */
+.category-list-c .cta-add-a {
+    border-top: 1px solid #b6b6b6;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 18px;
 }
