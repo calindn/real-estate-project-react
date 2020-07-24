@@ -255,9 +255,150 @@
     position: relative;
     bottom: 19px;
 }
+/*  --------- */
+
+/* Homes styles */
+.homes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 68px;
+}
+.homes .home-c {
+    margin: 14px;
+    transition: .3s ease-in;
+    
+}
+.homes .home-c:hover {
+    -webkit-box-shadow: -2px 2px 21px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 21px -1px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 21px -1px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+/* SelectButtons styles ++++++++++++ */
+.select-buttons-c {
+    text-transform: uppercase;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.select-buttons-c > div {
+    height: 52px;
+    width: 47.1%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: .3s ease-in;
+}
+.select-buttons-c > div:hover {
+    -webkit-box-shadow: -3px 11px 21px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 11px 21px -12px rgba(0,0,0,0.75);
+    box-shadow: -3px 11px 21px -12px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.select-buttons-c .all-sale-announcements {
+    background-color: #4caf50;
+    color: #fff;
+}
+.select-buttons-c .all-rent-anouncements {
+    background-color: #fff;
+    color: #888;
+}
+/* ------------------------------------------ */
+
+
+/* OtherAnnouncements and Announcement styles */
+.other-announcements-c {
+    border: 1px solid blue;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.other-announcements-c > h1 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 97%;
+    border: 1px solid red;
+    margin: auto;   
+    /* margin-left: 20px; */
+    margin-bottom: 10px;
+}
+.other-announcements-c > div {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.announcement-c {
+    width: 210px;
+    height: 270px;
+    background-color: #fff;
+}
+.announcement-c:hover {
+    -webkit-box-shadow: -2px 2px 21px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 21px -1px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 21px -1px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.announcement-c .upper {
+    position: relative;
+    height: 157px;
+    width: 100%;
+    background: url('../../../imgs/adopta-un-prieten-fidel.jpg');
+    background-size: contain;
+}
+
+.announcement-c .price-start {
+    position: absolute;
+    bottom: -14px;
+    left: 48%; 
+    font-size: 15px;
+    background: #009687;
+    color: #fff;
+    width: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 28px;
+
+    -webkit-box-shadow: -7px 11px 21px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -7px 11px 21px -12px rgba(0,0,0,0.75);
+    box-shadow: -7px 11px 21px -12px rgba(0,0,0,0.75);
+}
+.announcement-c .lower {
+    height: auto;
+    width: 100%;
+}
+.announcement-c .lower h1 {
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+    margin-top: 19px;
+}
+.announcement-c .lower p {
+    color: #999;
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+    margin-top: 46px;
+}
 
 
 
+
+/* CategoryList styles ++++++++++++++++++++++++++++++++++++++++++++++++ */
 .category-list-c {
     position: absolute;
     border: 1px solid red;
@@ -336,4 +477,110 @@
     text-align: center;
     padding-top: 30px;
     font-size: 18px;
+    color: #212121
+}
+.category-list-c .cta-add-a p > span {
+    display: inline-block;
+    margin-left: 19px;
+    margin-top: 3px;
+}
+.category-list-c .cta-add-a p span button {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid black;
+    width: 170px;
+    height: 37px;
+    background-color: #F25C5C;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    transition: background-color .2s ease-in-out, box-shadow .3s ease-in-out;
+    cursor: pointer;
+}
+.category-list-c .cta-add-a p span button:hover {
+    background-color: #F25050;
+    -webkit-box-shadow: 0px 2px 19px 4px rgba(33, 37, 33, 0.7);
+    -moz-box-shadow: 0px 2px 19px 4px rgba(33, 37, 33, 0.7);
+    box-shadow: 0px 2px 19px -6.4px rgba(33, 37, 33, 0.7);
+}
+.category-list-c .cta-add-a p span button span:nth-child(1) {
+    width: 46px;
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+
+
+/* Partners component styles */
+.partners-c {
+    width: 80%;
+    margin: auto;
+    border: 1px solid red;
+    height: 237px;
+    position: relative;
+    top: 400px;
+    margin-bottom: 100px;
+    background-color: rgb(245, 237, 237);
+}
+.partners-c > h1 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #727272;
+    text-align: center;
+
+}
+.partners-c > h1 span {
+    font-weight: bold;
+    color: #000;
+    margin-right: 5px;
+}
+.partners-c > h1 a {
+    text-decoration: none;
+    color: #4caf50;
+    margin-left: 5px;
+}
+.partners-c .wrapper {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+.partners-c .wrapper div:nth-child(1) {
+    position: absolute;
+    width: 300px;
+}
+.partners-c .wrapper div:nth-child(2) {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 179px;
+}
+.partners-c .wrapper div:nth-child(3) {
+    position: absolute;
+    right: 0%;
+    width: auto;
+}
+.partners-c .slider-dots {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partners-c .slider-dots span {
+    background-color: #d9d9d9;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.partners-c .slider-dots .selected {
+    background-color: #4caf50;
 }

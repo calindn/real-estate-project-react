@@ -63,9 +63,11 @@ export default function CategoryList() {
             </div>
             <div className='cta-add-a'>
                 <p>Vrei să vinzi simplu si rapid?
-                    <button className='btn'>
-                        <span>+</span><span>ADAUGĂ ANUNȚ</span>
-                    </button>
+                    <span>
+                        <button className='btn'>
+                            <span>+</span>ADAUGĂ ANUNȚ
+                        </button>
+                    </span>
                 </p>
             </div>
         </div>

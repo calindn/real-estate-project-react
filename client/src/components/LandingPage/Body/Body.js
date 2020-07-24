@@ -18,7 +18,7 @@ export default function Body() {
             <SelectButtons />
             <OtherAnnouncements />
             <CategoryList />
-            <AddAnnouncements />
+            {/* <AddAnnouncements /> */}
             <Partners />
             <VideoAd />
         </div>
