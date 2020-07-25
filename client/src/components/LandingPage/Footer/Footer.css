@@ -1,0 +1,96 @@
+.newsletter-c {
+    position: relative;
+    top: 1000px;
+    width: 30%;
+    height: 300px;
+    margin-bottom: 20px;
+    border: 2px solid red;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.newsletter-c p {
+    font-size: 15px;
+    color: #fff;
+    margin-right: 20px;
+}
+.newsletter-c > form {
+    border: 1px solid #bdbdbd;
+    height: 33px;
+}
+.newsletter-c  form label  {
+    background: url('../../../imgs/email_icon_light_gray.svg');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    top: 9px;
+    margin-left: 10px;
+}
+.newsletter-c form input {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #bdbdbd;
+    font-size: 13px;
+}
+.newsletter-c form button {
+    background:#4caf50;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100px;
+    height: 33px;
+    border: none;
+    outline: none;
+    position: relative;
+    bottom: 1px;
+    left: .5px;
+}
+
+
+/* Sections component styles */
+.sections-c {
+    position: relative;
+    top: 630px;
+    left: 500px;
+    border: 1px solid red;
+    width: 950px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #212121;
+}
+.sections-c > div:nth-child(1) {
+    color: #fff;
+}
+.sections-c > div:nth-child(4) {
+    color: #bdbdbd;
+}
+.sections-c .h-line {
+    position: absolute;
+    top: 19px;
+    border-top: 1px solid #000;
+    width: 100%;
+    height:0px;
+}
+.sections-c .lists {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.sections-c .lists ul {
+    list-style: none;
+}
+.sections-c .lists ul li {
+    line-height: 23px;
+    color: #bdbdbd;
+    cursor: pointer;
+}
+.sections-c .lists ul li:hover {
+    color: #fff;
+}
