@@ -316,24 +316,41 @@
 
 /* OtherAnnouncements and Announcement styles */
 .other-announcements-c {
-    border: 1px solid blue;
+    position: relative;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 50px;
+}
+.other-announcements-c .h-line {
+    border-top: 1px solid #d9d9d9;
+    width: 78%;
+    height:0px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    /* top: 483px; */
+    top: -17px;
+}
+.other-announcements-c .wrapper {
     width: 80%;
     height: auto;
     margin: auto;
     display: flex;
     flex-direction: column;
     position: relative;
+    top: 9px;
+   
 }
-.other-announcements-c > h1 {
+.other-announcements-c  .wrapper > h1 {
     font-size: 15px;
     margin-bottom: 20px;
     width: 97%;
-    border: 1px solid red;
     margin: auto;   
-    /* margin-left: 20px; */
     margin-bottom: 10px;
 }
-.other-announcements-c > div {
+.other-announcements-c  .wrapper > div {
     width: 100%;
     height: auto;
     margin: auto;
@@ -400,8 +417,8 @@
 
 /* CategoryList styles ++++++++++++++++++++++++++++++++++++++++++++++++ */
 .category-list-c {
-    position: absolute;
-    border: 1px solid red;
+    position: relative;
+    top: 100px;
     width: 100%;
     height: auto;
 
@@ -413,7 +430,7 @@
 
 /* columns row -------------------------- */
 .category-list-c .columns {
-    width: 80%;
+    width: 78%;
     margin: auto;
     margin-bottom: 30px;
     display: flex;
@@ -456,7 +473,7 @@
 
 /* text row ------------------------------- */
 .category-list-c .text {
-    width: 80%;
+    width: 78%;
     margin: auto;
     font-size: 12px;
     line-height: 20px;
@@ -471,7 +488,7 @@
 /* cta row -------------------------------- */
 .category-list-c .cta-add-a {
     border-top: 1px solid #b6b6b6;
-    width: 80%;
+    width: 78%;
     margin: auto;
     margin-top: 20px;
     text-align: center;
@@ -515,63 +532,69 @@
 
 /* Partners component styles */
 .partners-c {
-    width: 80%;
-    margin: auto;
-    border: 1px solid red;
-    height: 237px;
     position: relative;
-    top: 400px;
-    margin-bottom: 100px;
-    background-color: rgb(245, 237, 237);
+    top: 180px;
+    width: 100%;
+    height: 237px;
+    background-color: #fff;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 50px;
 }
-.partners-c > h1 {
+.partners-c .main-wrapper {
+    width: 78%;
+    margin: auto;
+    height: 237px;
+    margin-bottom: 100px;
+    background-color: #fff;
+}
+.partners-c .main-wrapper > h1 {
     font-size: 20px;
     font-weight: normal;
     color: #727272;
     text-align: center;
 
 }
-.partners-c > h1 span {
+.partners-c .main-wrapper > h1 span {
     font-weight: bold;
     color: #000;
     margin-right: 5px;
 }
-.partners-c > h1 a {
+.partners-c .main-wrapper > h1 a {
     text-decoration: none;
     color: #4caf50;
     margin-left: 5px;
 }
-.partners-c .wrapper {
+.partners-c .main-wrapper .wrapper {
     display: flex;
     height: 100px;
     width: 100%;
     align-items: center;
     position: relative;
 }
-.partners-c .wrapper div:nth-child(1) {
+.partners-c .main-wrapper .wrapper div:nth-child(1) {
     position: absolute;
     width: 300px;
 }
-.partners-c .wrapper div:nth-child(2) {
+.partners-c .main-wrapper .wrapper div:nth-child(2) {
     position: absolute;
     left: 0px;
     right: 0px;
     margin: auto;
     width: 179px;
 }
-.partners-c .wrapper div:nth-child(3) {
+.partners-c .main-wrapper .wrapper div:nth-child(3) {
     position: absolute;
     right: 0%;
     width: auto;
 }
-.partners-c .slider-dots {
+.partners-c .main-wrapper  .slider-dots {
     height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.partners-c .slider-dots span {
+.partners-c .main-wrapper .slider-dots span {
     background-color: #d9d9d9;
     display: inline-block;
     width: 14px;
@@ -581,7 +604,7 @@
     cursor: pointer;
     position: relative;
 }
-.partners-c .slider-dots .selected {
+.partners-c .main-wrapper .slider-dots .selected {
     background-color: #4caf50;
 }
 /* ---------------------------------- */
@@ -593,7 +616,7 @@
     background-color: #000000;
     height: 305px;
     position: relative;
-    top: 400px;
+    top: 181px;
     display: flex;
     justify-content: space-around;
     

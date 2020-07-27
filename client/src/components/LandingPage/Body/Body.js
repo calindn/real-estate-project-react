@@ -14,13 +14,15 @@ export default function Body() {
     return (
         <div className='body-container'>
             <h1><img src={rocket_svg} alt='rocket svg' />Anunturi promovate</h1>
-            <Homes />
-            <SelectButtons />
-            <OtherAnnouncements />
-            <CategoryList />
-            {/* <AddAnnouncements /> */}
-            <Partners />
-            <VideoAd />
+            <div className='wrapper'>
+                <Homes />
+                <SelectButtons />
+                <OtherAnnouncements />
+                <CategoryList />
+                <Partners />
+                <VideoAd />
+            </div>
+
         </div>
     )
 }

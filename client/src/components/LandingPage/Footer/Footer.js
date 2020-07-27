@@ -9,13 +9,19 @@ import './Footer.css';
 
 export default function Footer() {
     return (
-        <div>
-            <Newsletter />
-            <Sections />
-            <Help />
-            <About />
-            <AppAccess />
-            <Follow />
+        <div className='footer-c'>
+            <div className='h-line-upper'></div>
+            <div className='h-line-lower'></div>
+            <div className='wrapper'>
+                <Newsletter />
+                <div className='row'>
+                    <Sections />
+                    <Help />
+                    <About />
+                    <AppAccess />
+                </div>
+                <Follow />
+            </div>
         </div>
     )
 }

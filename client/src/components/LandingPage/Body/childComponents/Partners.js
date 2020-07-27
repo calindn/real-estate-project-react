@@ -55,27 +55,30 @@ export default function Partners() {
     }
     return (
         <div className='partners-c'>
-            <h1>
-                <span>Platforme CRM partenere</span>
+            <div className='main-wrapper'>
+                <h1>
+                    <span>Platforme CRM partenere</span>
                 prin care poți publica automat pe
                 <a href='#'>HomeZZ.ro</a> și <a href='#'>Lajumate.ro</a>
-            </h1>
-            <div className='wrapper'>
-                <div>
-                    <img src={logo1.src} alt='Real Manager' />
+                </h1>
+                <div className='wrapper'>
+                    <div>
+                        <img src={logo1.src} alt='Real Manager' />
+                    </div>
+                    <div>
+                        <img src={logo2.src} alt='Pitagora soft imobiliar' />
+                    </div>
+                    <div>
+                        <img src={logo3.src} alt='IMMMOFLUX' />
+                    </div>
                 </div>
-                <div>
-                    <img src={logo2.src} alt='Pitagora soft imobiliar' />
-                </div>
-                <div>
-                    <img src={logo3.src} alt='IMMMOFLUX' />
+                <div className='slider-dots'>
+                    <span onClick={changeSliderPage} className='dot-1 selected'></span>
+                    <span onClick={changeSliderPage} className='dot-2'></span>
+                    <span onClick={changeSliderPage} className='dot-3'></span>
                 </div>
             </div>
-            <div className='slider-dots'>
-                <span onClick={changeSliderPage} className='dot-1 selected'></span>
-                <span onClick={changeSliderPage} className='dot-2'></span>
-                <span onClick={changeSliderPage} className='dot-3'></span>
-            </div>
+
         </div>
     )
 }
