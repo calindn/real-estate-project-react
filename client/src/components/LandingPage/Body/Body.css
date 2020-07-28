@@ -694,3 +694,29 @@ justify-content: space-between;
    border-left: 28px solid #fff;
    display: inline-block;
 }
+
+/* slide up btn styles */
+.slide-up-btn {
+    display: none;
+    width: 68px;
+    height: 68px;
+    border-radius: 100%;
+    background-color: #767370;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: .3s ease-out;
+    position: fixed;
+    right: 1.8vw;
+    top: 87vh;
+    z-index: 10;
+}
+.slide-up-btn:hover {opacity: 1;}
+
+.slide-up-btn i {
+    position: absolute;
+    top: 28px;
+    left: 26px;
+    color: #fff;
+    font-size: 14px;
+    
+}

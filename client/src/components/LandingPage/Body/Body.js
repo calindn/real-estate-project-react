@@ -11,18 +11,32 @@ import rocket_svg from '../../../imgs/rocket_promo_dark_green.svg';
 import './Body.css';
 
 export default function Body() {
-    return (
-        <div className='body-container'>
-            <h1><img src={rocket_svg} alt='rocket svg' />Anunturi promovate</h1>
-            <div className='wrapper'>
-                <Homes />
-                <SelectButtons />
-                <OtherAnnouncements />
-                <CategoryList />
-                <Partners />
-                <VideoAd />
-            </div>
 
-        </div>
+    const scrollUp = (e) => {
+        console.log(window.scrollY);
+
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+    return (
+        <>
+            <div className='body-container'>
+                <h1><img src={rocket_svg} alt='rocket svg' />Anunturi promovate</h1>
+                <div className='wrapper'>
+                    <Homes />
+                    <SelectButtons />
+                    <OtherAnnouncements />
+                    <CategoryList />
+                    <Partners />
+                    <VideoAd />
+                </div>
+
+            </div>
+            <div onClick={scrollUp} className='slide-up-btn'>
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </>
     )
 }

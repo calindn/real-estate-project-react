@@ -41,10 +41,14 @@ export default function Navbar() {
                 const navbar_c = document.querySelector('.navbar-container');
                 navbar_c.style.height = '0';
                 navbar_c.classList.add('dynamic-class')
+
+                document.querySelector('.slide-up-btn').style.display = 'block';
             }
             else if (window.scrollY < 199) {
                 const navbar_c = document.querySelector('.navbar-container');
                 navbar_c.classList.remove('dynamic-class')
+
+                document.querySelector('.slide-up-btn').style.display = 'none';
             }
         }
 
