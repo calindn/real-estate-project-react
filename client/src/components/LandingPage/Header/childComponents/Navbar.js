@@ -7,6 +7,7 @@ export default function Navbar() {
 
 
     useEffect(() => {
+        window.onresize = onResize;
         document.querySelector('#authentication').addEventListener('mouseenter', (evt) => {
             evt.stopPropagation();
             let popup = document.querySelector('#auth');
@@ -53,6 +54,28 @@ export default function Navbar() {
         }
 
     }, [])
+
+    const toggleOpen = (e) => {
+        e.stopPropagation();
+        let menu = document.querySelector('#nav-icon');
+        let open_menu = document.querySelector('.open-menu');
+
+        let isOpen = menu.classList.contains('open');
+        if (isOpen) {
+            menu.classList.remove('open');
+            open_menu.style.display = 'none';
+        }
+        else {
+            menu.classList.add('open');
+            open_menu.style.display = 'flex';
+        }
+    }
+    const onResize = () => {
+        if (window.innerWidth > 700) {
+            document.querySelector('.open-menu').style.display = 'none';
+            document.querySelector('#nav-icon').classList.remove('open');
+        }
+    }
     return (
         <>
             <div className='navbar-container'>
@@ -73,6 +96,24 @@ export default function Navbar() {
                 </div>
             </div>
             <div className='dark-overlay'></div>
+            <div onClick={toggleOpen} id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div className='open-menu'>
+                <div>Autentificare
+                    {/* <PopupCard id='auth' text={authenticationTxt} /> */}
+                </div>
+                <div>Creare Cont
+                            {/* <PopupCard id='create-a' text={createAccountTxt} /> */}
+                </div>
+                <div>Ajutor</div>
+                <div>
+                    <button><span>+</span>ADAUGĂ ANUNȚ</button>
+                </div>
+            </div>
         </>
 
     )

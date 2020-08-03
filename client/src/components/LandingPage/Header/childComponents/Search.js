@@ -1,5 +1,6 @@
+import React, { Component, Fragment, useEffect } from 'react';
 
-import React, { useState, useEffect } from "react";
+import Select from 'react-select';
 
 
 
@@ -9,10 +10,15 @@ export default function Search() {
         e.target.select();
     }
     useEffect(() => {
-        let ansambluri = document.querySelector('.ansambluri');
+        let tabs = document.querySelector('.search-c .tabs');
+        let display = tabs.style.display;
+        if (display !== 'none') {
+            let ansambluri = document.querySelector('.ansambluri');
 
-        ansambluri.classList.add('selected-tab');
-        console.log(ansambluri);
+            ansambluri.classList.add('selected-tab');
+            console.log(ansambluri);
+        }
+
     }, []);
 
     const handleTabClick = (e) => {
@@ -30,6 +36,9 @@ export default function Search() {
     return (
         <>
             <div className='search-c'>
+                <div className='select-real-estate-types' style={{ display: 'none' }}>
+                    <SingleSelect />
+                </div>
                 <div className='tabs'>
                     <div onClick={handleTabClick} className='toate tab'>Toate</div>
                     <div onClick={handleTabClick} className='apartamente tab'>Apartamente</div>
@@ -78,4 +87,93 @@ export default function Search() {
         </>
 
     )
+}
+
+
+const customStyles = {
+
+    option: (provided, state) => ({
+        ...provided,
+        color: 'black',
+        '&:first-child': {
+            backgroundColor: '#fff'
+        },
+        '&:hover': {
+            backgroundColor: '#4caf50',
+            color: '#fff'
+        }
+
+    }),
+}
+
+
+class SingleSelect extends Component {
+    state = {
+        isClearable: true,
+        isDisabled: false,
+        isLoading: false,
+        isRtl: false,
+        isSearchable: true
+    };
+
+    toggleClearable = () => {
+        this.setState(state => ({ isClearable: !state.isClearable }));
+    }
+    toggleDisabled = () =>
+        this.setState(state => ({ isDisabled: !state.isDisabled }));
+    toggleLoading = () =>
+        this.setState(state => ({ isLoading: !state.isLoading }));
+    toggleRtl = () => this.setState(state => ({ isRtl: !state.isRtl }));
+    toggleSearchable = () =>
+        this.setState(state => ({ isSearchable: !state.isSearchable }));
+
+    render() {
+        const {
+            isClearable,
+            isSearchable,
+            isDisabled,
+            isLoading,
+            isRtl,
+        } = this.state;
+
+        const options = [
+            { value: 'toate', label: 'Toate' },
+            { value: 'apartamente', label: 'Apartamente' },
+            { value: 'garsoniere', label: 'Garsoniere' },
+            { value: 'case-vile', label: 'Case-Vile' },
+            { value: 'terenuri', label: 'Terenuri' },
+            { value: 'birouri', label: 'Birouri - Spații comerciale' },
+            { value: 'cazare', label: 'Cazare' },
+            { value: 'ansambluri', label: 'Ansambluri' },
+        ]
+
+        return (
+            <>
+                <Select
+                    styles={customStyles}
+                    width='200px'
+                    className='basic-single'
+                    classNamePrefix='select'
+                    defaultValue={options[0]}
+                    isDisabled={isDisabled}
+                    isLoading={isLoading}
+                    isClearable={isClearable}
+                    isRtl={isRtl}
+                    isSearchable={isSearchable}
+                    name='real-estate type'
+                    options={options}
+                    theme={theme => ({
+                        ...theme,
+                        borderRadius: 0,
+                        colors: {
+                            ...theme.colors,
+                            primary25: 'hotpink',
+                            primary: '#4caf50',
+                        },
+                    })}
+
+                />
+            </>
+        )
+    }
 }
