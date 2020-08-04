@@ -68,6 +68,8 @@ export default function Navbar() {
         else {
             menu.classList.add('open');
             open_menu.style.display = 'flex';
+            // change logo position prop to fixed
+            // document.querySelector('.navbar-container .n-wrapper .logo').style.position = 'fixed !important';
         }
     }
     const onResize = () => {

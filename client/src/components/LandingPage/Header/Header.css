@@ -119,7 +119,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    z-index: 999999999;
+    z-index: 9999999999;
 }
 .navbar-container > div >  .logo > img {
     height: 27px;
@@ -577,7 +577,7 @@
     width: 100vw;
     height: 40.5vh;
     background-color: #388E3C;
-    z-index: 9999;
+    z-index: 99994;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -682,8 +682,9 @@
     }
     .search-c .select-real-estate-types {
         display: block !important;
-        width: 635px;
-        margin: auto; 
+        width: 625px;
+        margin: auto;
+        margin-left: 2.3vw; 
         margin-top: 10px;
         z-index: 999999989000;
     }
@@ -702,6 +703,30 @@
     }
     .open-menu {
         display: none;
+    }
+/* ------------------------------------------------------- added here - clean it up! */
+    .search-c .search {
+        /* display: flex;
+        width: 100%;
+        height: 70px;
+        margin-top: 5px !important; */
+        /* border: 1px solid red; */
+        margin-top: 5px !important;
+    
+    }
+    .search-c .search > div {
+        /* margin-left: 12px; */
+        margin-left: 2.3vw;
+        width: 78%;
+        
+    }
+    
+    .search-c .search > button {
+        width: 14.4vw !important;       
+    }
+
+    .search-c .search > button > span {
+        right: 1vw;
     }
 
 }
@@ -771,13 +796,15 @@
         display: none;
     }
     .navbar-container > div {
-
         display: flex;
-        /* justify-content: space-between; */
         width: 77vw;
         width: 567px;
         height: 7.5vh;
         margin-left: 82px;
+    }
+    .navbar-container > div > .logo {
+        position: fixed;
+        top: -45vh;
     }
 }
 
