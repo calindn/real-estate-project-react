@@ -41,12 +41,6 @@ export default function Partners() {
         else {
             logo1.src = imob_manager;
             logo2.src = null;
-
-            imgElements.forEach(((img, index) => {
-                if (index != 0) {
-                    img.style.display = 'none';
-                }
-            }))
             logo3.src = null;
         }
         setLogo1({ ...logo1 });
@@ -63,13 +57,13 @@ export default function Partners() {
                 </h1>
                 <div className='wrapper'>
                     <div>
-                        <img src={logo1.src} alt='Real Manager' />
+                        <img src={logo1.src} alt='' />
                     </div>
                     <div>
-                        <img src={logo2.src} alt='Pitagora soft imobiliar' />
+                        <img src={logo2.src} alt='' />
                     </div>
                     <div>
-                        <img src={logo3.src} alt='IMMMOFLUX' />
+                        <img src={logo3.src} alt='' />
                     </div>
                 </div>
                 <div className='slider-dots'>

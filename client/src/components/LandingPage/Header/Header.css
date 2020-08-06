@@ -42,10 +42,7 @@
     z-index: 999999999;
 }
 .navbar-container {
-    /* background-color: #388E3C  */
     z-index: 99999;
-    /* position: relative; */
-
     background-color: transparent;
     width: 100vw !important;
 }
@@ -237,7 +234,6 @@
     width: 54.87vw;
     height: 122px;
     margin: auto;
-    /* margin-top: 200px; */
     z-index: 50000;
 }
 .back-overlay {
@@ -361,14 +357,12 @@
     color: #fff;
 }
 .search-c > div .select-region {
-    /* border: 1px solid blue; */
     width: 538px;
     display: flex;
     align-items: center;
 
 }
 .search-c > div .select-region input {
-    /* border: 1px solid red !important; */
     font-size: 18px;
     display: inline-block;
     width: 500px;
@@ -699,23 +693,15 @@
         display: flex;
         justify-content: space-around;
         z-index: 999999999;
-        border: 1px solid red;
     }
     .open-menu {
         display: none;
     }
-/* ------------------------------------------------------- added here - clean it up! */
     .search-c .search {
-        /* display: flex;
-        width: 100%;
-        height: 70px;
-        margin-top: 5px !important; */
-        /* border: 1px solid red; */
         margin-top: 5px !important;
     
     }
     .search-c .search > div {
-        /* margin-left: 12px; */
         margin-left: 2.3vw;
         width: 78%;
         
@@ -742,12 +728,10 @@
     .search-c .search > button {
         margin-left: 4px;
         width: 16.5vw;
-        /* font-size: 18px; */
         font-size: 2.5vw;
     }
     .search-c .search > button i {
         font-size: 2.17vw;
-        /* margin-left: 10px; */
         margin-left: 1.4vw;
     }
     .cities {
@@ -771,40 +755,24 @@
     }
 
     .navbar-container > div > .r-side {
-        /* width: 36vw;
-        width: 450px;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        z-index: 999999999;
-        border: 1px solid red; */
         display: none;
     }
     #nav-icon {
         display: block;
         z-index: 9999999999;
     }
-    /* .navbar-container  {
-        background-color: red;  
-        transition: height .3s ease-in;
-        height: 40.5vh;
-    } */
-    /* .dynamic-class {
-        height: 40.5vh !important;
-    } */
     .open-menu {
         display: none;
     }
     .navbar-container > div {
         display: flex;
         width: 77vw;
-        width: 567px;
         height: 7.5vh;
         margin-left: 82px;
     }
     .navbar-container > div > .logo {
         position: fixed;
-        top: -45vh;
+        top: -330px;
     }
 }
 

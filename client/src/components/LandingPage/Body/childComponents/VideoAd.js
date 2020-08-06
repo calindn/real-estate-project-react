@@ -40,6 +40,13 @@ export default function VideoAd() {
                 <div className='section3'>
                     <div>
                         <span>Apasă butonul "play"</span>
+
+                        <span class='full-text'>
+                            <img src={play_tv_image} alt='campaign headline icon' />
+                            Dacă și la tine acasă "se stă în trafic"
+                            atunci cu siguranță aici vei găsi soluția.
+                            Apasă butonul "play"
+                        </span>
                     </div>
                     <div onClick={playVideoAd}>
                         <img src={promote_image_3} alt='promote image 3' />
