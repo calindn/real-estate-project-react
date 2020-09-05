@@ -8,6 +8,7 @@
     top: 0;
     right: 0;
 }
+
 .bg1 {
    
     background: url('../../../imgs/bg_1.jpg') no-repeat center center #f3f3f3;  
@@ -37,7 +38,7 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 7.5vh !important;
+    height: 54px !important;
     transition:  height .3s ease-in-out;
     z-index: 999999999;
 }
@@ -50,7 +51,7 @@
     display: flex;
     justify-content: space-between;
     width: 77vw;
-    height: 7.5vh;
+    height: 54px !important;
     margin: auto;
 }
 
@@ -495,7 +496,6 @@
     top: 14px;
     left: 14px;
     z-index: 999999;
-    /* margin: 50px auto; */
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -569,7 +569,7 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 40.5vh;
+    height: 288px;
     background-color: #388E3C;
     z-index: 99994;
     display: none;
@@ -611,7 +611,7 @@
     user-select: none;
 }
 .open-menu > div  > button > span {
-    width: 46px;
+    /* width: 46px; */
     width: 7vw;
     /* font-size: 25px; */
     font-size: 4vw;
@@ -687,7 +687,6 @@
     }
 
     .navbar-container > div > .r-side {
-        width: 36vw;
         width: 450px;
         height: 100%;
         display: flex;
@@ -767,12 +766,386 @@
     .navbar-container > div {
         display: flex;
         width: 77vw;
-        height: 7.5vh;
+        height: 54px;
         margin-left: 82px;
     }
     .navbar-container > div > .logo {
         position: fixed;
-        top: -330px;
+        height: 50px;
+        top: -0.4px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    
+    .heading-c >  h1,
+    .heading-c >  h2 {
+        width: 360px;
+        position: relative;
+        left: 10px;
+    }
+    .heading-c > h1 {
+        line-height: 40px;
+        font-size: 40px;
+    }
+    .heading-c > h2 {
+        line-height: 15px;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+
+    .search-c {
+        width: 82vw;
+    }
+    .back-overlay {
+        width: 84vw;
+    }
+    .search-c .search > button {
+        margin-left: 4px;
+        width: 16.5vw;
+        font-size: 2.5vw;
+    }
+    .search-c .search > button i {
+        font-size: 2.17vw;
+        margin-left: 1.4vw;
+    }
+    .cities {
+        width: 320px;
+        height: 70px;
+        overflow: hidden;
+        
+    }
+    .cities .city {
+        margin-left: 5px;
+        margin-bottom: 5px;
+        width: 73px;
+    }
+    .select-region {
+        overflow: hidden;
+    }
+    .search-c .select-real-estate-types {
+        display: block !important;
+        width: 79vw;
+        margin: auto; 
+        position: relative;
+        left: 3.5px;
+    }
+    .select-wrapper .select-action {
+        position: relative;
+        width: 100px !important;
+        font-size: 13.5px !important;
+    }
+    .select-region input {
+        font-size: 13.5px !important;      
+    }
+    .slide-down-btn{
+        width: 50px;
+        height: 50px;
+    }
+    .slide-down-btn i {
+        font-size: 12px;
+        position: absolute;
+        top: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .heading-c >  h1,
+    .heading-c >  h2 {
+        width: 290px;
+        position: relative;
+        left: 10px;
+    }
+    .heading-c > h1 {
+        line-height: 33px;
+        font-size: 33px;
+    }
+    .heading-c > h2 {
+        line-height: 13px;
+        font-size: 13px;
+        margin-top: 13px;
+    }
+    .search-c {
+        width: 290px;
+    }
+    .back-overlay {
+        width: 300px;
+    }
+    .search-c .search > button {
+        margin-left: 4px;
+        width: 16.5vw;
+        font-size: 2.5vw;
+    }
+    .search-c .search > button i {
+        font-size: 2.17vw;
+        margin-left: 1.4vw;
+    }
+    .cities {
+        width: 290px;
+        left: 12px;
+        height: 70px;
+        overflow: hidden;
+    }
+    .cities .city {
+        margin-left: 5px;
+        margin-bottom: 5px;
+        width: 60px;
+        font-size: 11px;
+    }
+    
+    .search-c .select-real-estate-types {
+        display: block !important;
+        width: 270px;
+        margin: auto; 
+        position: relative;
+        left: 0px;
+    }
+    .search > div {
+        width: 180px !important;
+    }
+    .select-wrapper .select-action {
+        position: relative;
+        width: 180px !important;
+        font-size: 13.5px !important;
+    }
+    .select-region input {
+        font-size: 13.5px !important;      
+    }
+    
+    .search-c .search > button {
+        width: 82px !important;
+        margin-left: 9px;
+        font-size: 12px;
+    }
+    .search-c .search > button i {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .search-c .search > button span {
+        position: relative;
+        right: 7px;
+    }
+    .slide-down-btn{
+        width: 45px;
+        height: 45px;
+        right: 10px;
+        top: 475px;
+    }
+    .slide-down-btn i {
+        font-size: 10px;
+        position: absolute;
+        top: 19px;
+    }
+
+    #header-c-id {
+        width: 100vw;
+        height: 540px;
+        background-size: cover !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .dark-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 540px;
+        background-color: #222;
+        opacity: 0.3;
+    }
+    
+}
+
+@media screen and (max-width: 360px) {
+    #header-c-id {
+        width: 105vw;
+    }
+    .dark-overlay {
+        width: 105vw;
+    }
+
+    .heading-c >  h1,
+    .heading-c >  h2 {
+        position: relative;
+        left: 25px;
+    }
+
+    .search-c {
+        left: 30px;
+    }
+    .back-overlay {
+        left: 30px;
+    }
+    
+    .cities {
+        width: 290px;
+        left: 40px;
+        height: 70px;
+        overflow: hidden;
+    }
+    .cities .city {
+        margin-left: 5px;
+        margin-bottom: 5px;
+        width: 60px;
+        font-size: 11px;
+    }
+    
+    .search-c .select-real-estate-types {
+        display: block !important;
+        width: 270px;
+        margin: auto; 
+        position: relative;
+        left: 0px;
+    }
+    .search > div {
+        width: 180px !important;
+    }
+    .select-wrapper .select-action {
+        position: relative;
+        width: 180px !important;
+        font-size: 13.5px !important;
+    }
+    .select-region input {
+        font-size: 13.5px !important;      
+    }
+    
+    .search-c .search > button {
+        width: 82px !important;
+        margin-left: 9px;
+        font-size: 12px;
+    }
+    .search-c .search > button i {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .search-c .search > button span {
+        position: relative;
+        right: 7px;
+    }
+
+    
+    #nav-icon {
+        display: block;
+        z-index: 9999999999;
+    }
+    .open-menu {
+        overflow: hidden !important;
+        display: none;
+        width: 400px !important;
+    }  
+}
+
+@media screen and (max-width: 337px) {
+    #header-c-id {
+        width: 110vw;
+    }
+    .dark-overlay {
+        width: 110vw;
+    }
+
+    .heading-c >  h1,
+    .heading-c >  h2 {
+        position: relative;
+        left: 37px;
+    }
+
+    .search-c {
+        left: 30px;
+    }
+    .back-overlay {
+        left: 30px;
+    }
+    
+    .cities {
+        width: 290px;
+        left: 33px;
+        height: 70px;
+        overflow: hidden;
+    }
+    .cities .city {
+        margin-left: 5px;
+        margin-bottom: 5px;
+        width: 60px;
+        font-size: 11px;
+    }
+    
+    .search-c .select-real-estate-types {
+        display: block !important;
+        width: 270px;
+        margin: auto; 
+        position: relative;
+        left: 0px;
+    }
+    .search > div {
+        width: 180px !important;
+    }
+    .select-wrapper .select-action {
+        position: relative;
+        width: 180px !important;
+        font-size: 13.5px !important;
+    }
+    .select-region input {
+        font-size: 13.5px !important;      
+    }
+    
+    .search-c .search > button {
+        width: 82px !important;
+        margin-left: 9px;
+        font-size: 12px;
+    }
+    .search-c .search > button i {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .search-c .search > button span {
+        position: relative;
+        right: 7px;
+    }
+
+    .navbar-container > div > .logo {
+        position: fixed;
+        height: 50px;
+        top: -0.4px;
+        left: 65px;
+    }
+    
+
+    /* asddddddddddddddddddddddddddd */
+    .open-menu {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 288px;
+        background-color: #388E3C;
+        z-index: 99994;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .open-menu > div {
+        margin-bottom: 17px;
+        position: relative;
+        right: 0px;
+        width: 25vw;
+        width: 100px; 
+    }
+    .open-menu > div:nth-child(4) button {
+        width: 90px;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .open-menu > div {
+        margin-bottom: 17px;
+        position: relative;
+        right: 10px;
+        width: 25vw;
+        width: 100px;
+    }
+}
+
 
