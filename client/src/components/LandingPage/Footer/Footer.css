@@ -7,8 +7,6 @@
     justify-content: space-around;
     position: relative;
     bottom: 65px;
-    
-
 }
 .newsletter-c p {
     font-size: 15px;
@@ -18,7 +16,6 @@
 .newsletter-c > form {
     border: 1px solid #bdbdbd;
     height: 33px;
-    
 }
 .newsletter-c  form label  {
     background: url('../../../imgs/email_icon_light_gray.svg');
@@ -150,7 +147,7 @@
 .help-c .wrapper ul li {
     color: #bdbdbd;
     width: 100%;
-    height: auto;
+    height: 21.5px;
     cursor: pointer;
     line-height: 23px;
 }
@@ -194,7 +191,7 @@
     font-size: 14px;
     line-height: 23px;
     width: 100%;
-    height: auto;
+    height: 21.5px;
     cursor: pointer;
 }
 .about-c ul li:hover {
@@ -326,7 +323,6 @@
     font-size: 14px;
     color: #bdbdbd;
     margin-top: 40px;
-    width: 100%;
     width: 90vw;
     text-align: center;
 }
@@ -397,9 +393,41 @@
     justify-content: space-evenly;
 }
 }
-
+@media screen and (max-width: 865px) {
+    .footer-c {
+        /* border: 1px solid red; */
+        top: 750px;
+    }
+}
+@media screen and (max-width: 857px) {
+    .footer-c {
+        /* border: 1px solid red; */
+        top: 1060px !important;
+    }
+}
+@media screen and (max-width: 648px) {
+    .footer-c {
+        top: 1250px !important;
+    }
+}
+@media screen and (max-width: 580px) {
+    .footer-c {
+        top: 1900px !important;
+    }
+}
+@media screen and (max-width: 450px) {
+    .footer-c {
+        top: 2030px !important;
+    }
+}
+@media screen and (max-width: 359px) {
+    .footer-c {
+        top: 2110px !important;
+        width: 359px !important;
+        overflow: hidden;
+    }
+}
 @media screen and (max-width: 781px) {
-
     .footer-c {
         width: 100%;
         height: 1300px;
@@ -473,6 +501,41 @@
     .help-c {
         margin-left: 53px;
     }
+    
+    /* About component styles  */
+    .about-c {
+        margin-left: 53px;
+    }
+    
+    /* AppAccess component styles */
+    .appAccess-c {
+        margin-left: 53px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .footer-c .h-line-upper {
+        margin-top: 35px;
+    }
+    .newsletter-c {
+        width: 280px;
+    }
+    .newsletter-c form {
+        width: 200px;
+        height: 30px;
+    }
+    .newsletter-c form input {
+        width: 120px;
+    }
+    .newsletter-c form button {
+        font-size: 12px;
+        margin-top: 20px;
+        margin-left: 28%;
+        width: 85px !important;
+    }
+    .help-c {
+        margin-left: 53px;
+    }
+   
     
     /* About component styles  */
     .about-c {

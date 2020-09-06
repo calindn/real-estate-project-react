@@ -7,6 +7,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    overflow: hidden;
 }
 
 .bg1 {
@@ -960,16 +961,16 @@
 
 @media screen and (max-width: 360px) {
     #header-c-id {
-        width: 105vw;
+        width: 110vw;
     }
     .dark-overlay {
-        width: 105vw;
+        width: 110vw;
     }
 
     .heading-c >  h1,
     .heading-c >  h2 {
         position: relative;
-        left: 25px;
+        left: 35px;
     }
 
     .search-c {
@@ -1030,11 +1031,28 @@
         display: block;
         z-index: 9999999999;
     }
+    .navbar-container > div > .logo {
+        left: 75px;
+    }
     .open-menu {
         overflow: hidden !important;
         display: none;
         width: 400px !important;
     }  
+    .dynamic-class {
+        width: 115% !important;
+    }
+}
+@media screen and (max-width: 359px) {
+    #header-c-id {
+        width: 359px !important;
+        left: 0;
+        overflow: hidden !important;
+    }
+    .dark-overlay {
+        width: 359px !important;
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 337px) {
@@ -1111,8 +1129,6 @@
         left: 65px;
     }
     
-
-    /* asddddddddddddddddddddddddddd */
     .open-menu {
         position: fixed;
         top: 0;
@@ -1145,6 +1161,12 @@
         right: 10px;
         width: 25vw;
         width: 100px;
+    }
+    .navbar-container > div > .logo {
+        position: fixed;
+        height: 50px;
+        top: 0px !important;
+        left: 95px !important;
     }
 }
 
